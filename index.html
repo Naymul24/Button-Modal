@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button data-modal-target="#modal" class="modal-button">
+            <p> Button </p>
+        </button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h3>Modal Open</h3>
+                </div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus eos quam debitis
+                    dicta? Odio voluptatem aspernatur quis perferendis, ex eligendi dolore esse magni obcaecati debitis
+                    expedita sit porro eius laudantium atque. Labore dignissimos odit ducimus molestiae sint? Expedita
+                    architecto sint laboriosam enim placeat facilis fuga, consectetur veritatis esse repudiandae
+                    nesciunt atque alias nihil maxime? Adipisci numquam ratione dolor ducimus mollitia corrupti, autem
+                    eum, harum sunt repellendus voluptate aliquid nisi? Earum odit soluta recusandae id harum odio fugit
+                    nobis sequi dignissimos inventore expedita, totam non quisquam natus unde hic aspernatur
+                    consequuntur fuga, nesciunt quidem eius iusto incidunt? Praesentium, doloribus? Ipsa!</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

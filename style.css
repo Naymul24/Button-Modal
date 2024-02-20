@@ -1,0 +1,93 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: rgb(183, 183, 183);
+    height: 1000px;
+    text-align: center;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+.modal-button {
+    color: #679EF5;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 80px;
+  margin-top: 350px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #F0F0F0;
+  width: 800px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-title h3 {
+  color: #679EF5;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.modal-body p {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
